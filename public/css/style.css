@@ -79,7 +79,9 @@ h1 {
 
 
 
-.form-group input[type="text"] {
+.form-group input[type="text"],
+
+.form-group select {
 
   width: 100%;
 
@@ -91,7 +93,15 @@ h1 {
 
   border-radius: 5px;
 
-  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  box-sizing: border-box;
+
+  background-color: #fff;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  font-size: 14px;
+
+  color: #333;
 
 }
 

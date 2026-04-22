@@ -22,6 +22,16 @@
                 <input type="text" name="price123" value="{{ $item->price }}">
             </div>
 
+            <div class="form-group">
+                <label>Category:</label>
+                <select name="category_id">
+                    <option value="">-- Select Category --</option>
+                    @foreach($categories as $category)
+                        <option value="{{ $category->id }}" {{ $item->category_id == $category->id ? 'selected' : '' }}>{{ $category->category_name }}</option>
+                    @endforeach
+                </select>
+            </div>
+
             <button type = "submit" class="btn-submit">Update</button>
         </form>
 
