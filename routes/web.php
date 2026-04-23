@@ -3,12 +3,15 @@
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EmployeeController;
+
+
+Route::get('/', function ()  {
+    return redirect('products');
+});
 
 Route::get('/products', [ProductController::class, 'index']);
 Route::post('/products123', [ProductController::class, 'store']);
-
-use App\Http\Controllers\EmployeeController;
-
 Route::get('/employees', [EmployeeController::class, 'employeeall']);
 Route::post('/employees123',[EmployeeController::class, 'employeeinsert']);
 
