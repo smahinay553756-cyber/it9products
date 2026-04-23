@@ -1,3 +1,13 @@
+# Existing
 vendor
 node_modules
 .git
+
+# Recommended additions
+.env
+storage/*.key
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+auth.json
